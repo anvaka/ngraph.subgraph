@@ -1,0 +1,20 @@
+{
+  "name": "ngraph.subgraph",
+  "version": "1.0.0",
+  "description": "Builds a subgraph of a graph for a set of nodes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ngraph",
+    "subgraph",
+    "graph"
+  ],
+  "author": "Andrei Kashcha",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anvaka/ngraph.subgraph"
+  }
+}
