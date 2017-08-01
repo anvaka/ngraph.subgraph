@@ -24,7 +24,7 @@ var g2 = getSubgraph(new Set(['a', 'c'], srcGraph);
 
 // digraph g2 {
 //   a;
-//   c'
+//   c;
 // }
 
 ```
