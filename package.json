@@ -4,7 +4,7 @@
   "description": "Builds a subgraph of a graph for a set of nodes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap test/index.js"
   },
   "keywords": [
     "ngraph",
@@ -16,5 +16,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/anvaka/ngraph.subgraph"
+  },
+  "dependencies": {
+    "ngraph.graph": "0.0.13"
+  },
+  "devDependencies": {
+    "tap": "^10.7.1"
   }
 }
