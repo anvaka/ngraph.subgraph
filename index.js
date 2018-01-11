@@ -13,9 +13,7 @@ module.exports = getSubGraph;
  * @returns {ngraph.graph} Graph object that has all nodes from a nodeSet.
  */
 function getSubGraph(nodeSet, srcGraph) {
-  var graph = createGraph({
-    uniqueLinkId: false
-  });
+  var graph = createGraph();
 
   nodeSet.forEach(function(nodeId) {
     var srcNode = srcGraph.getNode(nodeId);

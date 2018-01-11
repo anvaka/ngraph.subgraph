@@ -4,7 +4,7 @@ var getSubgraph = require('../');
 var createGraph = require('ngraph.graph');
 
 test('it can create a subset', function (t) {
-  var srcGraph = createGraph({ uniqueLinkId: true });
+  var srcGraph = createGraph();
   srcGraph.addNode(1, 'hello');
 
   srcGraph.addLink(1, 2, 42);
@@ -25,7 +25,7 @@ test('it can create a subset', function (t) {
 });
 
 test('it can handle isolated nodes', function (t) {
-  var srcGraph = createGraph({ uniqueLinkId: true });
+  var srcGraph = createGraph();
   srcGraph.addNode('a', 'hello');
 
   srcGraph.addLink('a', 'b');
