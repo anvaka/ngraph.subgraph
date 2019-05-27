@@ -1,6 +1,6 @@
 {
   "name": "ngraph.subgraph",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Builds a subgraph of a graph for a set of nodes",
   "main": "index.js",
   "scripts": {
