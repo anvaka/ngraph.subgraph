@@ -18,9 +18,9 @@
     "url": "https://github.com/anvaka/ngraph.subgraph"
   },
   "dependencies": {
-    "ngraph.graph": "0.0.14"
+    "ngraph.graph": "^18.0.0"
   },
   "devDependencies": {
-    "tap": "^13.0.4"
+    "tap": "^14.1.11"
   }
 }
