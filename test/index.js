@@ -33,7 +33,7 @@ test('it can handle isolated nodes', function (t) {
   
   var g = getSubgraph(new Set(['a', 'c']), srcGraph);
 
-  t.equals(g.getLinksCount(), 0, 'No lihnks');
+  t.equals(g.getLinksCount(), 0, 'No links');
   t.equals(g.getNodesCount(), 2, 'Only two nodes');
 
   t.ok(g.getNode('a'), 'First node is here');
