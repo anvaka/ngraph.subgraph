@@ -12,14 +12,14 @@ test('it can create a subset', function (t) {
   
   var g = getSubgraph(new Set([1, 2]), srcGraph);
 
-  t.equals(g.getLinksCount(), 1, 'Only one link');
+  t.equal(g.getLinksCount(), 1, 'Only one link');
   t.ok(g.hasLink(1, 2), 'link is correct');
-  t.equals(g.getLink(1, 2).data, 42, 'link data is correct');
+  t.equal(g.getLink(1, 2).data, 42, 'link data is correct');
 
-  t.equals(g.getNodesCount(), 2, 'Only two nodes');
+  t.equal(g.getNodesCount(), 2, 'Only two nodes');
   t.ok(g.getNode(1), 'First node is here');
   t.ok(g.getNode(2), 'Second node is here');
-  t.equals(g.getNode(1).data, 'hello', 'Second node is here');
+  t.equal(g.getNode(1).data, 'hello', 'Second node is here');
 
   t.end();
 });
@@ -33,12 +33,12 @@ test('it can handle isolated nodes', function (t) {
   
   var g = getSubgraph(new Set(['a', 'c']), srcGraph);
 
-  t.equals(g.getLinksCount(), 0, 'No links');
-  t.equals(g.getNodesCount(), 2, 'Only two nodes');
+  t.equal(g.getLinksCount(), 0, 'No links');
+  t.equal(g.getNodesCount(), 2, 'Only two nodes');
 
   t.ok(g.getNode('a'), 'First node is here');
   t.ok(g.getNode('c'), 'Second node is here');
-  t.equals(g.getNode('a').data, 'hello', 'Second node is here');
+  t.equal(g.getNode('a').data, 'hello', 'Second node is here');
 
   t.end();
 });
