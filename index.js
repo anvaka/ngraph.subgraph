@@ -3,14 +3,14 @@ var createGraph = require('ngraph.graph');
 module.exports = getSubGraph;
 
 /**
- * Returns only a subgraph of a srcGraph for a set of `nodeSet`.
+ * Returns only a subgraph of a `srcGraph` for a set of `nodeSet`.
  * 
  * @params {Set} nodeSet set of node identifiers that should be used in the
- * subgraph. Note: if srcGraph doesn't contain a node from this specified, an
+ * subgraph. Note: if `srcGraph` doesn't contain a node from this set, an
  * exception is thrown.
  * @param {ngraph.graph} srcGraph - origianal graph.
  * 
- * @returns {ngraph.graph} Graph object that has all nodes from a nodeSet.
+ * @returns {ngraph.graph} Graph object that has all nodes from a `nodeSet`.
  */
 function getSubGraph(nodeSet, srcGraph) {
   var graph = createGraph();
