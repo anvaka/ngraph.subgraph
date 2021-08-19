@@ -8,7 +8,7 @@ module.exports = getSubGraph;
  * @params {Set} nodeSet set of node identifiers that should be used in the
  * subgraph. Note: if `srcGraph` doesn't contain a node from this set, an
  * exception is thrown.
- * @param {ngraph.graph} srcGraph - origianal graph.
+ * @param {ngraph.graph} srcGraph - original graph.
  * 
  * @returns {ngraph.graph} Graph object that has all nodes from a `nodeSet`.
  */
