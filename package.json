@@ -4,7 +4,7 @@
   "description": "Builds a subgraph of a graph for a set of nodes",
   "main": "index.js",
   "scripts": {
-    "test": "tap --branches=70 --lines=70 --statements=70 --functions=70 test/index.js"
+    "test": "tap --branches=90 --lines=90 --statements=90 --functions=90 test/index.js"
   },
   "keywords": [
     "ngraph",
